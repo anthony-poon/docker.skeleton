@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+    web:
+        build: .
+        ports:
+            - "80:80"
+        volumes:
+            - ./src:/var/www/html
+    mysql:
+        image: "mysql:latest"
+        command: --default-authentication-plugin=mysql_native_password
+        restart: always
+        environment:
+            MYSQL_DATABASE: docker_skeleton
+            MYSQL_USER: docker_skeleton
+            MYSQL_PASSWORD: ew0jFuOwMa
+            MYSQL_RANDOM_ROOT_PASSWORD: "True"
+        ports:
+            - "3306:3306"
+volumes:
+    webroot: {}

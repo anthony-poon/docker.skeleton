@@ -1,0 +1,16 @@
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://gitlab+deploy-token-10:ke2Tyjs7SekB1cmeWjPi@git.emarsys.net/custint/res.git"
+        }
+    ],
+    "require": {
+        "custint/res": "^1.0",
+        "twig/twig": "^2.0",
+        "ext-json": "*",
+        "ext-curl": "*"
+    },
+    "extra": {
+    }
+}
